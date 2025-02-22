@@ -38,7 +38,7 @@ export default function SharePost1(){
                     setMyProfile(result.data[0]);
                 }
             });
-      },[session?.user?.id]
+      },[session?.user?.id,supabase]
     );
     
 
@@ -63,7 +63,7 @@ export default function SharePost1(){
                 return result ;
             }
         })
-    },[id])
+    },[id,supabase])
 
     if(!session){
         return (<Login/>)

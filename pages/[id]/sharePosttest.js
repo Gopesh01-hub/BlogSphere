@@ -7,7 +7,7 @@ import PostCard from "@/components/PostCard";
 import { userContext } from "@/context/context";
 import Login from "../login";
 
-export default function sharePost1(){
+export default function SharePost1(){
     const route=useRouter();
     const [id,setId]=useState();
     const [flag,setFlag]=useState(true);

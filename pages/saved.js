@@ -4,7 +4,7 @@ import { UserContextProvider } from "@/context/context";
 import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useEffect, useState } from "react";
 
-export default function savedPostPage(){
+export default function SavedPostPage(){
   const [savedPost,setSavedPost]=useState();
     const session=useSession();
     const supabase=useSupabaseClient();

@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(()=>{
     fatchPost()
-  },[])
+  },[supabase])
   
   useEffect(()=>{
     
@@ -31,7 +31,7 @@ export default function Home() {
             }
             // console.log(result.data[0]);
         });
-  },[session?.user?.id]
+  },[session?.user?.id,supabase]
 );
 
   if(!session){
